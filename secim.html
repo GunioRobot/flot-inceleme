@@ -21,7 +21,7 @@ $(function () {
         "1": {
             label: "1",
             data: [[1, Math.floor(Math.random()*10)+1], [2, Math.floor(Math.random()*10)+1], [3, Math.floor(Math.random()*10)+1], [4, Math.floor(Math.random()*10)+1], [5, Math.floor(Math.random()*10)+1], [6, Math.floor(Math.random()*10)+1], [7, Math.floor(Math.random()*10)+1], [8, Math.floor(Math.random()*10)+1], [9, Math.floor(Math.random()*10)+1], [10, Math.floor(Math.random()*10)+1], [11, Math.floor(Math.random()*10)+1], [12, Math.floor(Math.random()*10)+1], [13, Math.floor(Math.random()*10)+1], [14, Math.floor(Math.random()*10)+1], [15, Math.floor(Math.random()*10)+1], [16, Math.floor(Math.random()*10)+1], [17, Math.floor(Math.random()*10)+1], [18, Math.floor(Math.random()*10)+1], [19, Math.floor(Math.random()*10)+1]]
-        },        
+        },
         "2": {
             label: "2",
             data: [[1, Math.floor(Math.random()*10)+1], [2, Math.floor(Math.random()*10)+1], [3, Math.floor(Math.random()*10)+1], [4, Math.floor(Math.random()*10)+1], [5, Math.floor(Math.random()*10)+1], [6, Math.floor(Math.random()*10)+1], [7, Math.floor(Math.random()*10)+1], [8, Math.floor(Math.random()*10)+1], [9, Math.floor(Math.random()*10)+1], [10, Math.floor(Math.random()*10)+1], [11, Math.floor(Math.random()*10)+1], [12, Math.floor(Math.random()*10)+1], [13, Math.floor(Math.random()*10)+1], [14, Math.floor(Math.random()*10)+1], [15, Math.floor(Math.random()*10)+1], [16, Math.floor(Math.random()*10)+1], [17, Math.floor(Math.random()*10)+1], [18, Math.floor(Math.random()*10)+1], [19, Math.floor(Math.random()*10)+1]]
@@ -55,8 +55,8 @@ $(function () {
         val.color = i;
         ++i;
     });
-    
-    // insert checkboxes 
+
+    // insert checkboxes
     var choiceContainer = $("#choices");
     $.each(datasets, function(key, val) {
         choiceContainer.append('<br/><input type="checkbox" name="' + key +
@@ -66,7 +66,7 @@ $(function () {
     });
     choiceContainer.find("input").click(plotAccordingToChoices);
 
-    
+
     function plotAccordingToChoices() {
         var data = [];
 
